@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+        // object in js = collection of key-value pairs
+        // value can be a list, function or even another object
+        let person = {
+            name: "smog", 
+            id: 40,
+            city: "hyd",
+            // array
+            hobbies: ["reading", "dancing"],
+            // function
+            work: function(){
+                console.log("student");
+            },
+            // another object
+            address: {
+                area: "kukatpally", 
+                pin: 500072, 
+                city: "hyd"
+            }
+        };
+        person.work();
+        console.log(person.name);
+        //console.log(person.hobbies[0]);
+        console.log(person.address.pin);
+    </script>
+</body>
+</html>

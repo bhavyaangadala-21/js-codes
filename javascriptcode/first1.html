@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta neme="viewport" content="width=device-width, initial-scale=1">
+        <title>DOM MANIPULATIONS</title>
+    </head>
+    <body>
+        
+    </body>
+    <script>
+        // h1 element 
+        const h1Element = document.createElement("h1");
+        h1Element.textContent = "DOM MANIPULATIONS";
+        document.body.appendChild(h1Element);
+        h1Element.id="heading";
+        // for giving id name
+        h1Element.classList.add("main-heading");   
+        // for giving class name
+
+        // p element 
+        const pElement = document.createElement("p");
+        pElement.textContent = "creating elements dynamically using java script";
+        document.body.appendChild(pElement);
+        pElement.setAttribute("id", "pvalue");
+
+        // button
+        const button = document.createElement("button");
+        button.textContent = "get started";
+        document.body.appendChild(button);
+
+        // on click function or addEventListener for the button
+        button.addEventListener("click",function()
+        {
+            document.body.style.backgroundColor = "yellow"
+            h1Element.style.color="pink"
+            pElement.style.color="blue"
+        }
+    );
+
+
+
+    </script>
+</html>

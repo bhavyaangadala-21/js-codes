@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Login Form</title>
+        <style>
+            body{
+                background: linear-gradient(to right, rgb(168, 201, 228), rgb(245, 245, 159));
+                margin: 0;
+                height: 100vh;
+                text-align: center;
+                padding: 20px;
+            }
+            h1{
+                font-size: 80px;
+            }
+            .btn{
+                padding: 20px;
+                display: flex;
+                gap:20px;
+                justify-content: centre;
+                margin: auto;
+            }
+            button{
+                width: 90px;
+            height: 30px;
+            border-radius: 10px;
+            background-color: rgb(26, 104, 104);
+            transition: all 0.3s ease;
+            color: rgb(39, 31, 31);
+            }
+            button:hover{
+            transform: translateY(-5px);
+            background-color: rgb(229, 80, 80);
+            box-shadow: 3px 3px 4px lightblue;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>LOGIN</h1>
+        <div>
+            <label>Username</label>
+            <input type="text" id="name">
+            <br><br>
+            <label>Password</label>
+            <input type="password" id="pass">
+            <br><br>
+        </div>
+        <div class="btn">
+            <button id="login">Login</button>
+            <button id="cancel" style="margin-left: 15px;">Cancel</button>
+        </div>
+        <h4 id="result"></h4>
+        <script>
+            const userName=document.getElementById("userName");
+            const password=document.getElementById("password");
+            const loginBtn=document.getElementById("login");
+            const cancelBtn=document.getElementById("cancel");
+            let user1 ="subbu";
+            let pass1 ="Pass@1234";
+            let userInput = userName.value;
+            loginBtn.onclick=function(){
+                
+            }
+        </script>
+    </body>
+</html>

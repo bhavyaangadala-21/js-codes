@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta neme="viewport" content="width=device-width, initial-scale=1">
+        <title>Arrays</title>
+    </head>
+
+    <body>
+
+        <h1 id="heading">Arrays Practice</h1>
+
+        <script>
+            let list = [Krishna, "Radhe", 108, 'Shyam'];
+            console.log(list);
+            list.push(56.00);
+            console.log(list);
+            list.pop();
+            console.log(list);
+            console.log("Index 1", list[1]);
+            console.log("");
+            console.log("Traverse through arrray")
+            // traverse through an array
+            list.forEach(function(ele){
+                console.log(ele);
+            });
+            console.log("");
+            console.log("Arrow Function");
+            // traverse using an arrow function
+            list.forEach((ele) => {
+                console.log(ele);
+            })
+            // display with index
+            console.log("");
+            list.forEach(function(ele,index){
+                console.log("Index " + index + " : " + ele);
+            })
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta neme="viewport" content="width=device-width, initial-scale=1">
+        <title>Arrays</title>
+    </head>
+
+    <body>
+
+        <h1 id="heading">Student Array</h1>
+
+        <script>
+            // name, rno, percentage, mail, mobile no, city
+            let student = [];
+            student.push("Madhimaaran");
+            student.push(108);
+            student.push(100);
+            student.push("maara@21.com");
+            student.push(1234567890);
+            student.push("Kerala");
+            student.forEach((element) => {
+                console.log(element);
+            });
+            console.log("");
+            student.forEach(function(element){
+                console.log(element);
+            });
+            console.log("");
+            student.forEach((num,index)=>{
+                console.log(index + " : " + num);
+            });
+            let name = "mathimaaran"
+            function print(){
+                console.log("hello "+name);
+            }
+            print(name);
+            const message = function(){
+            console.log("welcome");
+
+            }
+            message();
+            printname = =>{
+                console.log("hello world")
+            }
+            printname();
+                
+        </script>
+
+    </body>
+</html>
